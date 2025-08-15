@@ -1,0 +1,142 @@
+{
+  "name": "Smart Recycling Assistant",
+  "short_name": "RecycleAI",
+  "description": "Your AI-powered guide to responsible recycling",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#2ecc71",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["environment", "utility", "education"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHJ4PSIxNiIgZmlsbD0iIzJlY2M3MSIvPjxwYXRoIGQ9Ik0zNiAyMGMtOC44IDAtMTYgNy4yLTE2IDE2czcuMiAxNiAxNiAxNiAxNi03LjIgMTYtMTYtNy4yLTE2LTE2LTE2em0wIDI4Yy02LjYgMC0xMi01LjQtMTItMTJzNS40LTEyIDEyLTEyIDEyIDUuNCAxMiAxMi01LjQgMTItMTIgMTJ6IiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik0zMS41IDI4LjVsLTMgM0wzNiAzOS4ybDcuNS03LjUtMy0zTDM2IDMzLjJsLTQuNS00Ljd6IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjM2IiB5PSI1OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7imIg8L3RleHQ+PC9zdmc+",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyMCIgZmlsbD0iIzJlY2M3MSIvPjxwYXRoIGQ9Ik00OCAyNGMtMTMuMiAwLTI0IDEwLjgtMjQgMjRzMTAuOCAyNCAyNCAyNCAyNC0xMC44IDI0LTI0LTEwLjgtMjQtMjQtMjR6bTAgNDBjLTguOCAwLTE2LTcuMi0xNi0xNnM3LjItMTYgMTYtMTYgMTYgNy4yIDE2IDE2LTcuMiAxNi0xNiAxNnoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTQwIDM2bC00IDRMNDggNTJsMTItMTItNC00TDQ4IDQ0bC04LTh6IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjQ4IiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4piI8L3RleHQ+PC9zdmc+",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyOCIgZmlsbD0iIzJlY2M3MSIvPjxwYXRoIGQ9Ik02NCAzMmMtMTcuNiAwLTMyIDE0LjQtMzIgMzJzMTQuNCAzMiAzMiAzMiAzMi0xNC40IDMyLTMyLTE0LjQtMzItMzItMzJ6bTAgNTZjLTEzLjIgMC0yNC0xMC44LTI0LTI0czEwLjgtMjQgMjQtMjQgMjQgMTAuOCAyNCAyNC0xMC44IDI0LTI0IDI0eiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNTIgNDhsLTYgNkw2NCA3MmwyNC0yNC02LTZMNjQgNjBsLTE2LTE2eiIgZmlsbD0id2hpdGUiLz48dGV4dCB4PSI2NCIgeT0iMTA4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7imIg8L3RleHQ+PC9zdmc+",
+      "sizes": "128x128",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDE0NCAxNDQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE0NCIgaGVpZ2h0PSIxNDQiIHJ4PSIzMiIgZmlsbD0iIzJlY2M3MSIvPjxwYXRoIGQ9Ik03MiAzNmMtMTkuOCAwLTM2IDE2LjItMzYgMzZzMTYuMiAzNiAzNiAzNiAzNi0xNi4yIDM2LTM2LTE2LjItMzYtMzYtMzZ6bTAgNjBjLTE0LjQgMC0yNC05LjYtMjQtMjRzOS42LTI0IDI0LTI0IDI0IDkuNiAyNCAyNC05LjYgMjQtMjQgMjR6IiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik01OCA1NGwtNiA2TDcyIDgwbDI0LTI0LTYtNkw3MiA2OGwtMTYtMTZ6IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjcyIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKYiDwvdGV4dD48L3N2Zz4=",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0MCIgZmlsbD0iIzJlY2M3MSIvPjxwYXRoIGQ9Ik05NiA0OGMtMjYuNCAwLTQ4IDIxLjYtNDggNDhzMjEuNiA0OCA0OCA0OCA0OC0yMS42IDQ4LTQ4LTIxLjYtNDgtNDgtNDh6bTAgODBjLTE4IDAtMzItMTQtMzItMzJzMTQtMzIgMzItMzIgMzIgMTQgMzIgMzItMTQgMzItMzIgMzJ6IiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik04MCA3Mmw4IDhMOTYgODhsOC04IDgtOEw5NiAxMDRsLTI0LTI0IDgtOHoiIGZpbGw9IndoaXRlIi8+PHRleHQgeD0iOTYiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4piI8L3RleHQ+PC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMDAiIGZpbGw9IiMyZWNjNzEiLz48cGF0aCBkPSJNMjU2IDEyOGMtNzAuNCAwLTEyOCA1Ny42LTEyOCAxMjhzNTcuNiAxMjggMTI4IDEyOCAxMjgtNTcuNiAxMjgtMTI4LTU3LjYtMTI4LTEyOC0xMjh6bTAgMjA4Yy00NC44IDAtODAtMzUuMi04MC04MHMzNS4yLTgwIDgwLTgwIDgwIDM1LjIgODAgODAtMzUuMiA4MC04MCA4MHoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTIxNiAxOTJsLTE2IDE2TDI1NiAyNjRsMzItMzItMTYtMTZMMjU2IDIzMmwtMTYtMTZMMjE2IDE5MnoiIGZpbGw9IndoaXRlIi8+PHRleHQgeD0iMjU2IiB5PSI0MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI2NCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKYiDwvdGV4dD48L3N2Zz4=",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Items",
+      "short_name": "Search",
+      "description": "Search for recycling instructions",
+      "url": "/?action=search",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyMCIgZmlsbD0iIzM0OThkYiIvPjxwYXRoIGQ9Ik00MCAyOGMtMTAuNCAwLTIwIDkuNi0yMCAyMHM5LjYgMjAgMjAgMjAgMjAtOS42IDIwLTIwLTkuNi0yMC0yMC0yMHptMCAzMmMtNi40IDAtMTItNS42LTEyLTEyczUuNi0xMiAxMi0xMiAxMiA1LjYgMTIgMTItNS42IDEyLTEyIDEyeiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNjAgNjBsLTQtNEw0OCA0OGwtOCA4IDQgNEw1NiA0NGw0IDR6IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjQ4IiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+UjTwvdGV4dD48L3N2Zz4=",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Camera Scan",
+      "short_name": "Scan",
+      "description": "Use camera to identify items",
+      "url": "/?action=camera",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyMCIgZmlsbD0iI2Y5OWMxMiIvPjxwYXRoIGQ9Ik00OCAyNGMtMTMuMiAwLTI0IDEwLjgtMjQgMjRzMTAuOCAyNCAyNCAyNCAyNC0xMC44IDI0LTI0LTEwLjgtMjQtMjQtMjR6bTAgNDBjLTguOCAwLTE2LTcuMi0xNi0xNnM3LjItMTYgMTYtMTYgMTYgNy4yIDE2IDE2LTcuMiAxNi0xNiAxNnoiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTQwIDQwaDhsNCAEySDYwVjQwSDUyVjMySUEwVjQweiIgZmlsbD0id2hpdGUiLz48dGV4dCB4PSI0OCIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfk7c8L3RleHQ+PC9zdmc+",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Find Centers",
+      "short_name": "Centers",
+      "description": "Locate nearby recycling centers",
+      "url": "/?action=map",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHJ4PSIyMCIgZmlsbD0iI2UzNGMzYyIvPjxwYXRoIGQ9Ik00OCAyMGMtMTMuMiAwLTI0IDEwLjgtMjQgMjQgMCAxMS4yIDggMjAuOCAyMCAyMi40VjcyaDh2LTUuNmMxMi0xLjYgMjAtMTEuMiAyMC0yMi40IDAtMTMuMi0xMC44LTI0LTI0LTI0em0wIDM2Yy02LjQgMC0xMi01LjYtMTItMTJzNS42LTEyIDEyLTEyIDEyIDUuNiAxMiAxMi01LjYgMTItMTIgMTJ6IiBmaWxsPSJ3aGl0ZSIvPjxwYXRoIGQ9Ik00MCA0NGg4djhINDB6IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjQ4IiB5PSI4OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+XujwvdGV4dD48L3N2Zz4=",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjU2OCIgdmlld0JveD0iMCAwIDMyMCA1NjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZ0dyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjY3ZWVhIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNzY0YmEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSI1NjgiIGZpbGw9InVybCgjYmdHcmFkaWVudCkiLz48cmVjdCB4PSIyMCIgeT0iNDAiIHdpZHRoPSIyODAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC45NSkiLz48dGV4dCB4PSIxNjAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMmVjYzcxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TbWFydCBSZWN5Y2xpbmcgQXNzaXN0YW50PC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzdmOGM4ZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+WW91ciBBSS1wb3dlcmVkIGd1aWRlIHRvIHJlc3BvbnNpYmxlIHJlY3ljbGluZzwvdGV4dD48cmVjdCB4PSIyMCIgeT0iMTYwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjEyMCIgcng9IjE1IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOTUpIi8+PHRleHQgeD0iMzAiIHk9IjE4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJjM2U1MCI+U2VhcmNoIGZvciBSZWN5Y2xpbmcgSW5mbjwvdGV4dD48cmVjdCB4PSIzMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNlOWVjZWYiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjQwIiB5PSIyMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzZjNzU3ZCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5TZWFyY2ggZm9yIGl0ZW1zLi4uPC90ZXh0Pjx0ZXh0IHg9IjI0NSIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzNDk4ZGIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfk5Y8L3RleHQ+PHJlY3QgeD0iMjAiIHk9IjMwMCIgd2lkdGg9IjI4MCIgaGVpZ2h0PSI4MCIgcng9IjE1IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOTUpIi8+PHRleHQgeD0iMzAiIHk9IjMyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJjM2U1MCI+QUktUG93ZXJlZCBJbWFnZSBSZWNvZ25pdGlvbjwvdGV4dD48dGV4dCB4PSIzMCIgeT0iMzQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiM3ZjhjOGQiPkNhcHR1cmUgaXRlbXMgZm9yIGluc3RhbnQgYW5hbHlzaXM8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSIzNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2Y5OWMxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+TtzwvdGV4dD48cmVjdCB4PSIyMCIgeT0iNDAwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjgwIiByeD0iMTUiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC45NSkiLz48dGV4dCB4PSIzMCIgeT0iNDI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMmMzZTUwIj5GaW5kIFJlY3ljbGluZyBDZW50ZXJzPC90ZXh0Pjx0ZXh0IHg9IjMwIiB5PSI0NDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzdmOGM4ZCI+RGlzY292ZXIgbmVhcmJ5IGZhY2lsaXRpZXM8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSI0NjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI2UzNGMzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+XujwvdGV4dD48L3N2Zz4=",
+      "sizes": "320x568",
+      "type": "image/svg+xml",
+      "platform": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MCIgaGVpZ2h0PSI4MDAiIHZpZXdCb3g9IjAgMCAxMjgwIDgwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnR3JhZGllbnRXaWRlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjY3ZWVhIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNzY0YmEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEyODAiIGhlaWdodD0iODAwIiBmaWxsPSJ1cmwoI2JnR3JhZGllbnRXaWRlKSIvPjx0ZXh0IHg9IjY0MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U21hcnQgUmVjeWNsaW5nIEFzc2lzdGFudDwvdGV4dD48dGV4dCB4PSI2NDAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuOSkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPllvdXIgQUktcG93ZXJlZCBndWlkZSB0byByZXNwb25zaWJsZSByZWN5Y2xpbmc8L3RleHQ+PHJlY3QgeD0iMTAwIiB5PSIyMDAiIHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiByeD0iMjAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC45NSkiLz48dGV4dCB4PSIxMjAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJjM2U1MCI+U2VhcmNoIEZlYXR1cmU8L3RleHQ+PHRleHQgeD0iMTIwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzdmOGM4ZCI+SW5zdGFudCByZWN5Y2xpbmcgaW5zdHJ1Y3Rpb25zPC90ZXh0Pjx0ZXh0IHg9IjI3NSIgeT0iMzUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiMzNDk4ZGIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfk5Y8L3RleHQ+PHJlY3QgeD0iNDcwIiB5PSIyMDAiIHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiByeD0iMjAiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC45NSkiLz48dGV4dCB4PSI0OTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzJjM2U1MCI+QUkgUmVjb2duaXRpb248L3RleHQ+PHRleHQgeD0iNDkwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzdmOGM4ZCI+Q2FtZXJhLWJhc2VkIGl0ZW0gYW5hbHlzaXM8L3RleHQ+PHRleHQgeD0iNjQ1IiB5PSIzNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZmlsbD0iI2Y5OWMxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+TtzwvdGV4dD48cmVjdCB4PSI4NDAiIHk9IjIwMCIgd2lkdGg9IjM1MCIgaGVpZ2h0PSIyMDAiIHJ4PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjk1KSIvPjx0ZXh0IHg9Ijg2MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMmMzZTUwIj5Mb2NhdGlvbiBTZXJ2aWNlPC90ZXh0Pjx0ZXh0IHg9Ijg2MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM3ZjhjOGQiPkZpbmQgbmVhcmJ5IHJlY3ljbGluZyBjZW50ZXJzPC90ZXh0Pjx0ZXh0IHg9IjEwMTUiIHk9IjM1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQwIiBmaWxsPSIjZTM0YzNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn5e6PC90ZXh0PjwvbG0+",
+      "sizes": "1280x800",
+      "type": "image/svg+xml",
+      "platform": "wide"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "image/*": [".jpg", ".jpeg", ".png", ".gif", ".webp"]
+      }
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+recycle",
+      "url": "/?item=%s"
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

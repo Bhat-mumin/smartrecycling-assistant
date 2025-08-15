@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recycling Assistant</title>
+    <meta name="theme-color" content="#2ecc71">
+    <meta name="description" content="AI-powered recycling assistant to help you recycle responsibly">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Offline Indicator -->
+    <div class="offline-indicator" id="offlineIndicator">
+        <i class="fas fa-wifi-slash"></i> You're offline. Limited functionality available.
+    </div>
+
+    <!-- PWA Install Prompt -->
+    <div class="install-prompt" id="installPrompt">
+        <div>
+            <i class="fas fa-mobile-alt"></i> Install this app on your device for easier access!
+        </div>
+        <div>
+            <button onclick="installApp()" style="margin: 0 10px;">Install</button>
+            <button onclick="dismissInstallPrompt()" style="background: transparent; border: 1px solid white;">Later</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-recycle"></i> Smart Recycling Assistant</h1>
+            <p class="subtitle">Your AI-powered guide to responsible recycling</p>
+        </div>
+
+        <!-- User Profile & Gamification -->
+        <div class="user-profile" id="userProfile">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <div style="font-weight: 600;">Eco Warrior</div>
+                    <div style="font-size: 0.9rem; opacity: 0.9;">Level <span id="userLevel">1</span></div>
+                </div>
+            </div>
+            <div class="gamification-stats">
+                <div><i class="fas fa-star"></i> <span id="userPoints">0</span> pts</div>
+                <div><i class="fas fa-recycle"></i> <span id="itemsRecycled">0</span> items</div>
+                <div><i class="fas fa-leaf"></i> <span id="streakDays">0</span> day streak</div>
+            </div>
+        </div>
+
+        <!-- Enhanced Search Section -->
+        <div class="search-section">
+            <div class="search-bar">
+                <div class="search-input-container">
+                    <input type="text" id="itemInput" placeholder="What would you like to recycle? (e.g., plastic bottle, battery)" autocomplete="off">
+                    <button class="voice-btn" id="voiceBtn" onclick="startVoiceSearch()" title="Voice Search">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+                <button onclick="searchItem()"><i class="fas fa-search"></i> Search</button>
+            </div>
+
+            <!-- Search Suggestions -->
+            <div class="search-suggestions">
+                <span class="suggestion-chip" onclick="searchSuggestion('plastic bottle')">Plastic Bottle</span>
+                <span class="suggestion-chip" onclick="searchSuggestion('battery')">Battery</span>
+                <span class="suggestion-chip" onclick="searchSuggestion('cardboard')">Cardboard</span>
+                <span class="suggestion-chip" onclick="searchSuggestion('glass jar')">Glass Jar</span>
+                <span class="suggestion-chip" onclick="searchSuggestion('electronics')">Electronics</span>
+                <span class="suggestion-chip" onclick="searchSuggestion('aluminum can')">Aluminum Can</span>
+            </div>
+
+            <!-- Search Results -->
+            <div id="result"></div>
+        </div>
+
+        <!-- AI Image Recognition Section -->
+        <div class="section">
+            <h2><i class="fas fa-camera"></i> AI-Powered Image Recognition</h2>
+            <p class="section-description">Point your camera at any item to get instant recycling guidance</p>
+            
+            <div class="camera-section">
+                <div class="camera-container">
+                    <video id="video" class="camera-preview" playsinline autoplay></video>
+                    <div class="camera-controls">
+                        <button onclick="startCamera()" class="btn btn-primary">
+                            <i class="fas fa-camera"></i> Start Camera
+                        </button>
+                        <button onclick="captureImage()" class="btn btn-success">
+                            <i class="fas fa-camera-retro"></i> Capture
+                        </button>
+                        <button onclick="stopCamera()" class="btn btn-danger">
+                            <i class="fas fa-stop-circle"></i> Stop
+                        </button>
+                        <label class="file-upload-btn btn btn-secondary">
+                            <input type="file" id="imageUpload" accept="image/*" onchange="analyzeUploadedImage()" style="display:none;">
+                            <i class="fas fa-upload"></i> Upload Image
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="captured-result-container">
+                    <canvas id="canvas" class="captured-image" style="display:none;"></canvas>
+                    <div id="imageResult" class="image-analysis-result"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recycling Center Locator -->
+        <div class="section">
+            <h2><i class="fas fa-map-marked-alt"></i> Recycling Center Locator</h2>
+            <p class="section-description">Find the nearest recycling centers in your area</p>
+            
+            <div class="location-info" id="userLocation">
+                <i class="fas fa-spinner fa-spin"></i> Getting your location...
+            </div>
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all" onclick="filterCenters('all')">
+                    <i class="fas fa-globe"></i> All Centers
+                </button>
+                <button class="filter-btn" data-filter="general" onclick="filterCenters('general')">
+                    <i class="fas fa-recycle"></i> General
+                </button>
+                <button class="filter-btn" data-filter="ewaste" onclick="filterCenters('ewaste')">
+                    <i class="fas fa-laptop"></i> E-Waste
+                </button>
+                <button class="filter-btn" data-filter="hazardous" onclick="filterCenters('hazardous')">
+                    <i class="fas fa-exclamation-triangle"></i> Hazardous
+                </button>
+                <button class="filter-btn" data-filter="organic" onclick="filterCenters('organic')">
+                    <i class="fas fa-leaf"></i> Compost
+                </button>
+            </div>
+
+            <div id="map"></div>
+            
+            <!-- Add Center Button -->
+            <div style="margin-top: 15px; text-align: center;">
+                <button onclick="showAddCenterForm()" class="secondary">
+                    <i class="fas fa-plus"></i> Report New Center
+                </button>
+            </div>
+        </div>
+
+        <!-- Recycling Tips Section -->
+        <div class="section">
+            <h2><i class="fas fa-lightbulb"></i> Quick Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-tint"></i>
+                    <h4>Clean Before Recycling</h4>
+                    <p>Rinse containers to remove food residue, but don't waste too much water doing it.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-sort"></i>
+                    <h4>Sort Properly</h4>
+                    <p>Different materials go in different bins. When in doubt, check with your local facility.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-battery-three-quarters"></i>
+                    <h4>Special Items</h4>
+                    <p>Batteries, electronics, and hazardous materials need special handling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Center Modal -->
+    <div id="addCenterModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddCenterForm()">&times;</span>
+            <h3>Report a New Recycling Center</h3>
+            <form id="addCenterForm" onsubmit="addRecyclingCenter(event)">
+                <input type="text" id="centerName" placeholder="Center Name" required>
+                <input type="text" id="centerAddress" placeholder="Address" required>
+                <select id="centerType" required>
+                    <option value="">Select Type</option>
+                    <option value="general">General Recycling</option>
+                    <option value="ewaste">E-Waste</option>
+                    <option value="hazardous">Hazardous Waste</option>
+                    <option value="organic">Organic/Compost</option>
+                </select>
+                <textarea id="centerNotes" placeholder="Additional notes (optional)"></textarea>
+                <button type="submit">Add Center</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    
+    <!-- Machine Learning Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.0/dist/coco-ssd.min.js"></script>
+    
+    <!-- Main Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
